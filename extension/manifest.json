@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "ONYX 3RB Companion",
+  "description": "An independent ONYX overlay for the official 3rb.io game. No bot/account automation.",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": ["https://3rb.io/*", "https://www.3rb.io/*"],
+      "css": ["panel.css"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}

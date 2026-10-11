@@ -1,0 +1,50 @@
+#onyx3rb-root {
+  --onyx3rb-opacity: .94; --onyx3rb-scale: 1;
+  position: fixed !important; right: 16px; bottom: 16px; left: auto; top: auto;
+  z-index: 2147483646 !important; width: 320px !important; max-width: 94vw !important;
+  direction: rtl !important; color: #e9f5fd !important;
+  border: 1px solid rgba(54,175,224,.36) !important; border-radius: 15px !important;
+  background: rgba(10,17,31,var(--onyx3rb-opacity)) !important;
+  box-shadow: 0 24px 75px rgba(0,0,0,.65), 0 0 0 1px rgba(20,165,200,.08) inset !important;
+  font: normal 13px/1.55 system-ui,Tahoma,Arial,sans-serif !important;
+  text-align: right !important; color-scheme: dark; box-sizing: border-box !important;
+  zoom: var(--onyx3rb-scale);
+}
+#onyx3rb-root *, #onyx3rb-root *::before, #onyx3rb-root *::after { box-sizing:border-box!important; font-family:inherit!important }
+#onyx3rb-root.onyx3rb-hidden { display:none!important }
+#onyx3rb-root .onyx3rb-header { display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 14px;cursor:grab;user-select:none;touch-action:none;border-bottom:1px solid #ffffff16 }
+#onyx3rb-root .onyx3rb-header:active { cursor:grabbing }
+#onyx3rb-root .onyx3rb-brand { display:flex;align-items:center;gap:10px }
+#onyx3rb-root .onyx3rb-mark { display:inline-flex;justify-content:center;align-items:center;width:32px;height:32px;border-radius:10px;background:linear-gradient(130deg,#16ccf3,#1674f1);color:#fff;font-size:22px;font-weight:900;box-shadow:0 0 18px #1095e568 }
+#onyx3rb-root .onyx3rb-brand b { display:block;line-height:1.1;font-size:17px;letter-spacing:1px;color:#f8fcff }
+#onyx3rb-root .onyx3rb-brand small { display:block;color:#79a8bd;font-size:9px;letter-spacing:1.3px;direction:ltr;text-align:right }
+#onyx3rb-root .onyx3rb-controls { display:flex;gap:6px }
+#onyx3rb-root button { cursor:pointer; border:1px solid #29445e;background:#192b3e;color:#e5f5ff;border-radius:9px;transition:background .15s,border-color .15s;padding:6px 9px;font-size:12px }
+#onyx3rb-root button:hover { background:#1c3d52;border-color:#219ac0 }
+#onyx3rb-root button:focus-visible,#onyx3rb-root input:focus-visible,#onyx3rb-root summary:focus-visible { outline:2px solid #6cdcff!important;outline-offset:2px }
+#onyx3rb-root .onyx3rb-icon-btn { width:27px;height:27px;padding:0;font-size:19px;line-height:1 }
+#onyx3rb-root .onyx3rb-body { padding:12px 14px 14px }
+#onyx3rb-root.onyx3rb-collapsed .onyx3rb-body { display:none }
+#onyx3rb-root .onyx3rb-stats { display:grid;grid-template-columns:1fr 1fr;gap:8px }
+#onyx3rb-root .onyx3rb-stats>div { background:#0a1d2d;border:1px solid #183c50;border-radius:10px;padding:9px 12px;display:flex;flex-direction:column;gap:2px }
+#onyx3rb-root .onyx3rb-stats small { font-size:11px;color:#91b8cd }
+#onyx3rb-root .onyx3rb-stats b { font:700 19px/1.2 ui-monospace,monospace!important;color:#68e3ff;direction:ltr;text-align:right }
+#onyx3rb-root .onyx3rb-status { margin:12px 0 4px;display:flex;align-items:center;gap:7px;color:#b9d7e7;font-size:12px }
+#onyx3rb-root .onyx3rb-light { display:inline-block;width:7px;height:7px;border-radius:50%;background:#6ddef7;box-shadow:0 0 10px #26a9cf }
+#onyx3rb-root .onyx3rb-hint { padding:0;margin:5px 0 12px;color:#8eacc0;font-size:11px;line-height:1.6 }
+#onyx3rb-root .onyx3rb-action-grid { display:grid;grid-template-columns:1fr 1fr;gap:7px }
+#onyx3rb-root .onyx3rb-action-grid button { min-height:39px;display:flex;gap:8px;align-items:center;justify-content:center }
+#onyx3rb-root .onyx3rb-action-grid button:first-child { background:#08739a45;border-color:#127e9a }
+#onyx3rb-root .onyx3rb-action-grid .onyx3rb-recording { color:#fff;background:#8c272f;border-color:#e25d67;animation:onyx3rb-blink 1s infinite alternate }
+@keyframes onyx3rb-blink { from {opacity:1} to {opacity:.7} }
+#onyx3rb-root .onyx3rb-settings { margin-top:12px;border-top:1px solid #ffffff17;padding-top:9px }
+#onyx3rb-root .onyx3rb-settings summary { cursor:pointer;color:#a8d4e4;user-select:none }
+#onyx3rb-root .onyx3rb-settings label { display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:10px;font-size:12px }
+#onyx3rb-root .onyx3rb-settings input[type=range] { width:115px;accent-color:#3cc8ea }
+#onyx3rb-root .onyx3rb-settings input[type=checkbox] { accent-color:#3cc8ea }
+#onyx3rb-root .onyx3rb-reset { margin-top:11px }
+#onyx3rb-root .onyx3rb-footer { text-align:center;font-size:10px;color:#8ba9be;margin-top:12px;direction:ltr }
+#onyx3rb-root .onyx3rb-disclaimer { margin-top:8px;border-radius:7px;padding:7px 8px;background:#173145;color:#9ebed3;font-size:10px;line-height:1.5 }
+#onyx3rb-root .onyx3rb-toast { position:absolute;bottom:calc(100% + 10px);right:0;left:0;background:#13384a;color:#dbf7ff;padding:9px 11px;border:1px solid #297995;border-radius:8px;text-align:center;display:none;font-size:12px }
+#onyx3rb-root .onyx3rb-toast.onyx3rb-show { display:block }
+@media (prefers-reduced-motion:reduce) {#onyx3rb-root *{animation:none!important;transition:none!important}}

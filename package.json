@@ -1,0 +1,13 @@
+{
+  "name": "onyx-3rb-companion",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Browser extension and Tampermonkey companion for 3rb.io",
+  "scripts": {
+    "build": "node tools/build-userscript.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm run build && npm run test"
+  },
+  "engines": { "node": ">=18" }
+}
